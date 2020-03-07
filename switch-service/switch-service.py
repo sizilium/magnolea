@@ -27,7 +27,7 @@ GPIO.setmode(GPIO.BOARD)
 for key, value in GPIO_mappings.items():
     print("initialize GPIO " + key + " - " + str(value))
     GPIO.setup(value, GPIO.OUT)
-    GPIO_states[value] = 0
+    GPIO_states[key] = 0
 
 app = Flask(__name__)
 CORS(app)
@@ -45,7 +45,7 @@ def switch_on(id):
     if id in GPIO_mappings:
         port = GPIO_mappings[id]
         GPIO.output(port, False)
-        GPIO_states[port] = 1
+        GPIO_states[id] = 1
         return jsonify({'id': id})
 
     abort(404) # not found
@@ -55,7 +55,7 @@ def switch_off(id):
     if id in GPIO_mappings:
         port = GPIO_mappings[id]
         GPIO.output(port, True)
-        GPIO_states[port] = 0
+        GPIO_states[id] = 0
         return jsonify({'id': id})
 
     abort(400)
