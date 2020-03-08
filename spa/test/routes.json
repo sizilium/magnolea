@@ -1,0 +1,4 @@
+{
+  "/switch/:id/on": "/switch-toggle",
+  "/switch/:id/off": "/switch-toggle"
+}

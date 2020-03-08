@@ -1,0 +1,14 @@
+{
+  "title": "Magnolea",
+  "switches": [
+    { "id": "EG-1", "name": "EG 1" },
+    { "id": "EG-2", "name": "EG 2" },
+    { "id": "EG-3", "name": "EG 3" },
+    { "id": "EG-4", "name": "EG 4" },
+    { "id": "OG-1", "name": "OG 1" },
+    { "id": "OG-2", "name": "OG 2" },
+    { "id": "OG-3", "name": "OG 3" },
+    { "id": "OG-4", "name": "OG 4" }
+  ],
+  "api": "http://127.0.0.1:5000"
+}

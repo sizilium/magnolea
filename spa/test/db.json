@@ -1,4 +1,13 @@
 {
-  "switch-on": { },
-  "switch-off": { }
+  "switch-toggle": {},
+  "switch": {
+    "EG-1": 0,
+    "EG-2": 1,
+    "EG-3": 0,
+    "EG-4": 0,
+    "OG-1": 0,
+    "OG-2": 0,
+    "OG-3": 1,
+    "OG-4": 0
+  }
 }
